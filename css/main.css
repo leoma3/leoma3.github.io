@@ -28,6 +28,9 @@
   @media screen and (max-width: 480px) {
     .fix-header {
       padding-bottom: 0.3em; } }
+  @media (hover: none), (hover: on-demand) {
+    .fix-header nav a:hover {
+      background: white; } }
   .fix-header:hover {
     background: rgba(0, 0, 0, 0.85); }
     .fix-header:hover .from-left {
