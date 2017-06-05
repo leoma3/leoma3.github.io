@@ -5,14 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
-  box-shadow: inset 0 0 10px 3px black; }
+  box-shadow: inset 0 0 10px -2px black; }
 
 #intro-bg {
-  background-image: url("../img/hk.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: white; }
 
 .fix-header {
   position: fixed;
@@ -24,17 +20,15 @@
   -ms-transition: background-color .1s ease;
   -o-transition: background-color .1s ease;
   transition: background-color .1s ease;
-  box-shadow: inset 0 0 10px -2px white; }
+  box-shadow: 0 0 10px -2px black; }
   @media screen and (max-width: 480px) {
     .fix-header {
       padding-bottom: 0.3em; } }
-  @media (hover: none), (hover: on-demand) {
-    .fix-header nav a:hover {
-      background: white; } }
-  .fix-header:hover {
-    background: rgba(0, 0, 0, 0.85); }
-    .fix-header:hover .from-left {
-      color: white; }
+  @media screen and (min-width: 768px) {
+    .fix-header:hover {
+      background: rgba(0, 0, 0, 0.85); }
+      .fix-header:hover .from-left {
+        color: white; } }
   .fix-header #navi-wrapper {
     width: 65%;
     margin: 0 auto; }
@@ -110,5 +104,12 @@
 .box {
   background: rgba(255, 255, 255, 0.7);
   box-sizing: border-box; }
+
+.push {
+  visibility: hidden; }
+
+@media only screen and (max-width: 480px) {
+  .push {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
