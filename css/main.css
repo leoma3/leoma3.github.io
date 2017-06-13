@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Aldrich|Montserrat+Subrayada|Open+Sans:300");
 .parallax {
   background-image: url("../img/self.jpg");
   background-attachment: fixed;
@@ -15,6 +16,7 @@
   background: #fff;
   width: 100%;
   z-index: 100;
+  top: 0;
   -webkit-transition: background-color .1s ease;
   -moz-transition: background-color .1s ease;
   -ms-transition: background-color .1s ease;
@@ -111,5 +113,8 @@
 @media only screen and (max-width: 480px) {
   .push {
     display: none; } }
+.pswp_bg {
+  opacity: 0.6;
+  will-change: none; }
 
 /*# sourceMappingURL=main.css.map */

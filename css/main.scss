@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Montserrat+Subrayada|Open+Sans:300');
 @mixin parallax-background($url) {
     background-image: url($url);
     background-attachment: fixed;
@@ -23,6 +25,7 @@
     background: #fff;
     width: 100%;
     z-index: 100;
+    top: 0;
 
     @media screen and (max-width: 480px) {
         padding-bottom: 0.3em;
@@ -165,4 +168,9 @@
         display: none;
     }
 
+}
+
+.pswp_bg{
+    opacity: 0.6;
+    will-change: none;
 }
