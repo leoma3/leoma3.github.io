@@ -8,7 +8,7 @@
     background-size: cover;
 }
 
-figcaption{
+figcaption {
     font-family: 'Open Sans';
 }
 
@@ -36,26 +36,51 @@ h4 {
     min-height: 100vh;
     box-shadow: inset 0 0 10px -2px black;
 }
-#uc-mockup{
+
+#uc-mockup {
     @include parallax-background("../img/mockup5.jpg");
 }
-#data-vis{
+
+#data-vis {
     @include parallax-background("../img/data-vis2.jpg");
-    background-color: gray;
+
+    background-color: black;
     background-size: contain;
 }
 
-#eds-wiring{
+#eds-wiring {
     @include parallax-background("../img/eds5.jpg");
+
+    background-color: black;
     background-size: contain;
 }
 
 #intro-bg {
-    // background: rgba(255, 255, 255, 1);
-    @include parallax-background("../img/hk.jpg");
+    @include parallax-background("../img/self-original.jpg");
+    background-position: center;
+    &:hover {
+        background: rgba(255, 255, 255, 1);
+        background-position: 2000px 2000px;
+    }
 }
 
-#self{
+#self-ori {
+        @include parallax-background("../img/self-original.jpg");
+}
+
+#self-empty {
+        @include parallax-background("../img/self-empty.jpg");
+}
+
+#self-inverted {
+    @include parallax-background("../img/self-inverted.jpg");
+}
+
+#self-normal {
+    @include parallax-background("../img/self-normal.jpg");
+}
+
+#self {
     @include parallax-background("../img/self.jpg");
 }
 
@@ -91,7 +116,7 @@ h4 {
     }
 
     .navi {
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
             padding: 0;
 
             &.span_3_of_12 {
@@ -216,20 +241,20 @@ h4 {
         h3, p {
             color: white;
         }
-        .highlight{
-            color:red;
+
+        .highlight {
+            color: red;
             font-weight: bold;
         }
-
     }
 
     figure {
         opacity: 0.85;
         -webkit-transition: opacity .45s ease;
-           -moz-transition: opacity .45s ease;
-            -ms-transition: opacity .45s ease;
-             -o-transition: opacity .45s ease;
-                transition: opacity .45s ease;
+        -moz-transition: opacity .45s ease;
+        -ms-transition: opacity .45s ease;
+        -o-transition: opacity .45s ease;
+        transition: opacity .45s ease;
     }
 
     figure:hover {
@@ -237,44 +262,43 @@ h4 {
     }
 }
 
-
 .pswp_bg {
     opacity: 0.6;
     will-change: none;
 }
 
-.pswp__caption__center{
+.pswp__caption__center {
     font-family: 'Open Sans', arial;
 }
 
-#uc-des{
-    float:right;
+#uc-des {
+    float: right;
     width: 35%;
     font-family: 'Open Sans', arial;
-    margin-right:2em;
+    margin-right: 2em;
     margin-top: -6em;
     margin-bottom: 3em;
     box-sizing: border-box;
 
-    @media screen and (max-width: 480px ) {
-        width:100%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
         margin: 0;
         padding: 1em;
     }
 }
-#data-des{
-    float:right;
+
+#data-des {
+    float: right;
     width: 35%;
     font-family: 'Open Sans', arial;
-    margin-right:3em;
+    margin-right: 3em;
     margin-top: 5%;
     margin-bottom: 3em;
     box-sizing: border-box;
 
-    @media screen and (max-width: 480px ) {
-        width:100%;
+    @media screen and (max-width: 768px) {
+        width: 100%;
         margin: 0;
         padding: 1em;
     }
-
 }

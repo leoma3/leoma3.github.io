@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
     <link rel="stylesheet" type="text/css" href="css/photoswipe-style.css">
+    <link rel='stylesheet prefetch' href='bower_components/photoswipe/dist/default-skin/default-skin.css'>
     <!--     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
@@ -18,8 +19,8 @@
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
     <!--     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'> -->
-    <link rel='stylesheet prefetch' href='bower_components/photoswipe/dist/default-skin/default-skin.css'>
-    <title></title>
+
+    <title>Leonardo Ma</title>
   </head>
   <body>
     <div class="section group fix-header">
@@ -34,7 +35,7 @@
           <a class="from-left" href="#skill">Skill</a>
         </div>
         <div class="col span_3_of_12 navi animated infinite">
-          <a class="from-left" href="">Contact</a>
+          <a class="from-left" href="#contact">Contact</a>
         </div>
       </div>
     </div>
@@ -43,9 +44,9 @@
       align-items: center;
       justify-content: center;
       ">
-      <h2 id="welcome-ms" style="display: none;
+      <h3 id="welcome-ms" style="display: none;
       padding:1em 0;
-      background: rgba(255, 255, 255, .5);
+      background: rgba(0, 0, 0, .5);
       color:transparent;
       text-align: center;
       width:0px;
@@ -57,15 +58,19 @@
     <div class="content-offset">
       <span id="intro"></span>
     </div>
-    <div class="section group" id="intro-bg">
-      <div class="col span_6_of_12 box">
+      <!-- <h1>Intro</h1> -->
+    <div class="section group" id="self-empty">
+      <div class="col span_4_of_12 box">
         Dolore duis id nisi laboris non minim nostrud veniam mollit dolore eu laborum minim non adipisicing.
       </div>
-      <div class="col span_6_of_12 box">
+      <div class="col span_4_of_12 box">
         Adipisicing id dolor esse exercitation do adipisicing ex nostrud esse reprehenderit occaecat quis quis officia laborum quis fugiat sunt.
       </div>
+      <div class="col span_4_of_12 box">
+
+      </div>
     </div>
-    <div class="parallax" id='self'></div>
+    <div class="parallax" id='self-normal'></div>
     <div class="content-offset">
       <span id="work"></span>
     </div>
@@ -73,7 +78,6 @@
       <h1>Work</h1>
       <h2>Urthecast</h2>
       <h3>Junior Web Developer & UI Designer</h3>
-      <!-- <h4>Urthecast</h4> -->
       <div class="section group">
         <div>
           <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject" style="margin-left: 0;">
@@ -115,7 +119,7 @@
       <h1>Work</h1>
       <h2>Data Visualization</h2>
       <h3>Designer & Developer</h3>
-      <!-- <h4>Urthecast</h4> -->
+
       <div class="section group">
         <div>
           <figure itemprop="associatedMedia" class="col span_6_of_12" itemscope itemtype="http://schema.org/ImageObject" style="margin-left: 0;opacity: 1">
@@ -172,7 +176,12 @@
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in <span class="highlight">voluptate</span> velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        <br>
+        <a href="http://eds.siat.sfu.ca/" class="external-link">
+          Go to the website
+        </a></p>
       </div>
     </div>
 
@@ -191,6 +200,24 @@
         <div class="col span_6_of_12 box">
           Adipisicing id dolor esse exercitation do adipisicing ex nostrud esse reprehenderit occaecat quis quis officia laborum quis fugiat sunt.
         </div>
+      </div>
+    </div>
+
+    <div class="parallax" id="self"></div>
+
+    <div class="content-offset">
+      <span id="contact"></span>
+    </div>
+      <h1>Contact</h1>
+    <div class="section group" id="intro-bg">
+      <div class="col span_4_of_12 box">
+        Dolore duis id nisi laboris non minim nostrud veniam mollit dolore eu laborum minim non adipisicing.
+      </div>
+      <div class="col span_4_of_12 box">
+        Adipisicing id dolor esse exercitation do adipisicing ex nostrud esse reprehenderit occaecat quis quis officia laborum quis fugiat sunt.
+      </div>
+      <div class="col span_4_of_12 box">
+        Pariatur ut mollit anim adipisicing occaecat incididunt sit aliqua proident id ea incididunt eiusmod dolor nulla proident minim velit in pariatur amet.
       </div>
     </div>
 
@@ -241,8 +268,10 @@
         </div>
       </div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
+<!--     <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script> -->
+    <script src="bower_components/photoswipe/dist/photoswipe-ui-default.min.js" type="text/javascript"></script>
+    <script src="bower_components/photoswipe/dist/photoswipe.min.js" type="text/javascript"></script>
     <script src='js/photoswipe.js'></script>
   </body>
 </html>

@@ -35,7 +35,7 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: gray;
+  background-color: black;
   background-size: contain; }
 
 #eds-wiring {
@@ -44,10 +44,43 @@ h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: black;
   background-size: contain; }
 
 #intro-bg {
-  background-image: url("../img/hk.jpg");
+  background-image: url("../img/self-original.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #intro-bg:hover {
+    background: white;
+    background-position: 2000px 2000px; }
+
+#self-ori {
+  background-image: url("../img/self-original.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#self-empty {
+  background-image: url("../img/self-empty.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#self-inverted {
+  background-image: url("../img/self-inverted.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#self-normal {
+  background-image: url("../img/self-normal.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,7 +119,7 @@ h4 {
     box-sizing: border-box;
     text-align: center;
     font-family: 'Montserrat Subrayada', arial; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .fix-header .navi {
         padding: 0; }
         .fix-header .navi.span_3_of_12 {
@@ -199,7 +232,7 @@ h4 {
   margin-top: -6em;
   margin-bottom: 3em;
   box-sizing: border-box; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     #uc-des {
       width: 100%;
       margin: 0;
@@ -213,7 +246,7 @@ h4 {
   margin-top: 5%;
   margin-bottom: 3em;
   box-sizing: border-box; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     #data-des {
       width: 100%;
       margin: 0;
