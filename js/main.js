@@ -9,13 +9,12 @@ $(document).on('click', 'a.from-left', function(event) {
 $(document).ready(function() {
     $("#welcome-ms").fadeIn(1000, function() {
         $(this).animate({
-            width: "100%"
+            width: "100%",
         }, 1000, function() {
+        	$(this).html("Welcome to my portfolio");
             $(this).animate({
                 color: "black"
-            }, 1000)
+            }, 1000);
         });
     });
-
-
 });

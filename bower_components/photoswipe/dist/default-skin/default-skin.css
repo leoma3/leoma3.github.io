@@ -245,6 +245,7 @@ a.pswp__share--download:hover {
 
  */
 .pswp__counter {
+  font-family: 'Open Sans';
   position: absolute;
   left: 0;
   top: 0;

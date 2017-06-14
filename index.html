@@ -11,103 +11,190 @@
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="bower_components/photoswipe/dist/photoswipe.css">
     <link rel="stylesheet" type="text/css" href="css/photoswipe-style.css">
-
     <!--     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada:700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
-<!--     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'> -->
+    <!--     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'> -->
     <link rel='stylesheet prefetch' href='bower_components/photoswipe/dist/default-skin/default-skin.css'>
     <title></title>
   </head>
   <body>
     <div class="section group fix-header">
       <div id="navi-wrapper">
-        <div class="col span_3_of_12 navi animated infinite pulse">
+        <div class="col span_3_of_12 navi animated infinite">
           <a class="from-left" href="#intro">Intro</a>
         </div>
-        <div class="col span_3_of_12 navi animated infinite pulse delay_1">
-          <a class="from-left" href="#design">Design</a>
+        <div class="col span_3_of_12 navi animated infinite">
+          <a class="from-left" href="#work">Work</a>
         </div>
-        <div class="col span_3_of_12 navi animated infinite pulse delay_2">
-          <a class="from-left" href="">Coding</a>
+        <div class="col span_3_of_12 navi animated infinite">
+          <a class="from-left" href="#skill">Skill</a>
         </div>
-        <div class="col span_3_of_12 navi animated infinite pulse delay_3">
-          <a class="from-left" href="">Skills</a>
+        <div class="col span_3_of_12 navi animated infinite">
+          <a class="from-left" href="">Contact</a>
         </div>
       </div>
     </div>
-    <div class="parallax" style="
+    <div class="parallax" id="self" style="
       display: flex;
       align-items: center;
       justify-content: center;
       ">
-      <h1 id="welcome-ms" style="display: none;
-      padding:1em;
+      <h2 id="welcome-ms" style="display: none;
+      padding:1em 0;
       background: rgba(255, 255, 255, .5);
       color:transparent;
       text-align: center;
+      width:0px;
+      height: 1em;
       font-family: 'Aldrich', sans-serif;
       ">
-      Hey there welcome to my portfolio</h1>
+      </h1>
     </div>
     <div class="content-offset">
-      <span id="intro">
-      </span>
+      <span id="intro"></span>
     </div>
     <div class="section group" id="intro-bg">
-      <div class="col span_3_of_12 box">
-        asd
+      <div class="col span_6_of_12 box">
+        Dolore duis id nisi laboris non minim nostrud veniam mollit dolore eu laborum minim non adipisicing.
       </div>
-      <div class="col span_3_of_12 box">
-        3 of 12
-      </div>
-      <div class="col span_3_of_12 box">
-        3 of 12
-      </div>
-      <div class="col span_3_of_12 box">
-        Main
+      <div class="col span_6_of_12 box">
+        Adipisicing id dolor esse exercitation do adipisicing ex nostrud esse reprehenderit occaecat quis quis officia laborum quis fugiat sunt.
       </div>
     </div>
-    <div class="parallax"></div>
+    <div class="parallax" id='self'></div>
     <div class="content-offset">
-      <span id="design">
-      </span>
+      <span id="work"></span>
+    </div>
+    <div class="my-gallery">
+      <h1>Work</h1>
+      <h2>Urthecast</h2>
+      <h3>Junior Web Developer & UI Designer</h3>
+      <!-- <h4>Urthecast</h4> -->
+      <div class="section group">
+        <div>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject" style="margin-left: 0;">
+            <a href="img/mockup1.jpg" itemprop="contentUrl" data-size="4000x2250">
+              <img src="img/mockup1.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption  1</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/mockup2.jpg" itemprop="contentUrl" data-size="4000x2250">
+              <img src="img/mockup2.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 2</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject" style="float: left;margin-left: 0;clear: left;">
+            <a href="img/mockup3.jpg" itemprop="contentUrl" data-size="4000x2250">
+              <img src="img/mockup3.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 3</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/mockup4.jpg" itemprop="contentUrl" data-size="4000x2250">
+              <img src="img/mockup4.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 4</figcaption>
+          </figure>
+        </div>
+        <p id='uc-des'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in <span class="highlight">voluptate</span> velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    <div class="parallax" id="uc-mockup"></div>
+
+    <div class="my-gallery">
+      <h1>Work</h1>
+      <h2>Data Visualization</h2>
+      <h3>Designer & Developer</h3>
+      <!-- <h4>Urthecast</h4> -->
+      <div class="section group">
+        <div>
+          <figure itemprop="associatedMedia" class="col span_6_of_12" itemscope itemtype="http://schema.org/ImageObject" style="margin-left: 0;opacity: 1">
+            <a href="img/data-vis.png" itemprop="contentUrl" data-size="4000x2250">
+              <img src="img/data-vis.png" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption  1</figcaption>
+          </figure>
+        </div>
+        <p id='data-des'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in <span class="highlight">voluptate</span> velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
 
-<div class="my-gallery">
-  <div class="section group">
-    <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-        <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
-      </a>
-      <figcaption itemprop="caption description">Image caption  1</figcaption>
-    </figure>
-    <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-        <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
-      </a>
-      <figcaption itemprop="caption description">Image caption 2</figcaption>
-    </figure>
-    <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-        <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
-      </a>
-      <figcaption itemprop="caption description">Image caption 3</figcaption>
-    </figure>
-    <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-        <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
-      </a>
-      <figcaption itemprop="caption description">Image caption 4</figcaption>
-    </figure>
+    <div class="parallax" id="data-vis"></div>
 
-  </div>
-</div>
-    <div class="parallax"></div>
+      <div class="my-gallery">
+      <h1>Work</h1>
+      <h2>Everyday Design Studio</h2>
+      <h3>Research Assistant</h3>
+      <div class="section group">
+        <div>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject" style="margin-left: 0;">
+            <a href="img/eds1.jpg" itemprop="contentUrl" data-size=640x427">
+              <img src="img/eds1.jpg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption  1</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/eds2.jpeg" itemprop="contentUrl" data-size="1800x1409">
+              <img src="img/eds2.jpeg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 2</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject" style="float: left;margin-left: 0;clear: left;">
+            <a href="img/eds3.jpeg" itemprop="contentUrl" data-size="480x640">
+              <img src="img/eds3.jpeg" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 3</figcaption>
+          </figure>
+          <figure itemprop="associatedMedia" class="col span_3_of_12" itemscope itemtype="http://schema.org/ImageObject">
+            <a href="img/eds4.png" itemprop="contentUrl" data-size="750x1334">
+              <img src="img/eds4.png" itemprop="thumbnail" alt="Image description" width="100%"/>
+            </a>
+            <figcaption itemprop="caption description">Image caption 4</figcaption>
+          </figure>
+        </div>
+        <p id='uc-des'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in <span class="highlight">voluptate</span> velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
 
+    <div class="parallax" id="eds-wiring"></div>
+
+    <div class="content-offset">
+      <span id="skill"></span>
+    </div>
+
+    <div>
+      <h1>Skill</h1>
+      <div class="section group">
+        <div class="col span_6_of_12 box">
+          Dolore duis id nisi laboris non minim nostrud veniam mollit dolore eu laborum minim non adipisicing.
+        </div>
+        <div class="col span_6_of_12 box">
+          Adipisicing id dolor esse exercitation do adipisicing ex nostrud esse reprehenderit occaecat quis quis officia laborum quis fugiat sunt.
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax" id="self"></div>
     <!-- Root element of PhotoSwipe. Must have class pswp. -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <!-- Background of PhotoSwipe.
