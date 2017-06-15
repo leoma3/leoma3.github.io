@@ -55,21 +55,23 @@ h4 {
     background-size: contain;
 }
 
-#intro-bg {
-    @include parallax-background("../img/self-original.jpg");
-    background-position: center;
+#self-hover {
+    background: rgba(255, 255, 255, 1);
+    background-position: 2000px 2000px;
+
     &:hover {
-        background: rgba(255, 255, 255, 1);
-        background-position: 2000px 2000px;
+        @include parallax-background("../img/self-original.jpg");
+
+        background-position: center;
     }
 }
 
 #self-ori {
-        @include parallax-background("../img/self-original.jpg");
+    @include parallax-background("../img/self-original.jpg");
 }
 
 #self-empty {
-        @include parallax-background("../img/self-empty.jpg");
+    @include parallax-background("../img/self-empty.jpg");
 }
 
 #self-inverted {

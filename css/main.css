@@ -47,16 +47,16 @@ h4 {
   background-color: black;
   background-size: contain; }
 
-#intro-bg {
-  background-image: url("../img/self-original.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-  #intro-bg:hover {
-    background: white;
-    background-position: 2000px 2000px; }
+#self-hover {
+  background: white;
+  background-position: 2000px 2000px; }
+  #self-hover:hover {
+    background-image: url("../img/self-original.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
 
 #self-ori {
   background-image: url("../img/self-original.jpg");
