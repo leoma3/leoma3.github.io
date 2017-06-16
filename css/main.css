@@ -18,6 +18,9 @@ h4 {
   font-size: 1.1em;
   font-family: 'Aldrich', arial; }
 
+.width-100 {
+  width: 100%; }
+
 .parallax {
   min-height: 100vh;
   box-shadow: inset 0 0 10px -2px black; }
@@ -27,7 +30,11 @@ h4 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #uc-mockup {
+      background-size: 100%; } }
 
 #data-vis {
   background-image: url("../img/data-vis2.jpg");
@@ -36,7 +43,11 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  background-color: black;
   background-size: contain; }
+  @media screen and (max-width: 768px) {
+    #data-vis {
+      background-size: 100%; } }
 
 #eds-wiring {
   background-image: url("../img/eds5.jpg");
@@ -45,53 +56,81 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
+  background-color: black;
   background-size: contain; }
+  @media screen and (max-width: 768px) {
+    #eds-wiring {
+      background-size: 100%; } }
 
 #self-hover {
-  background: white;
-  background-position: 2000px 2000px; }
+  background-image: url("../img/self-original.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  background-position: center; }
+  @media screen and (max-width: 768px) {
+    #self-hover {
+      background-size: 100%; } }
   #self-hover:hover {
-    background-image: url("../img/self-original.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; }
+    background: white;
+    background-position: 2000px 2000px; }
 
 #self-ori {
   background-image: url("../img/self-original.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #self-ori {
+      background-size: 100%; } }
 
 #self-empty {
   background-image: url("../img/self-empty.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #self-empty {
+      background-size: 100%; } }
 
 #self-inverted {
   background-image: url("../img/self-inverted.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #self-inverted {
+      background-size: 100%; } }
 
 #self-normal {
   background-image: url("../img/self-normal.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #self-normal {
+      background-size: 100%; } }
 
 #self {
   background-image: url("../img/self.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  background-color: black; }
+  @media screen and (max-width: 768px) {
+    #self {
+      background-size: 100%; } }
 
 .fix-header {
   position: fixed;
@@ -224,7 +263,7 @@ h4 {
 .pswp__caption__center {
   font-family: 'Open Sans', arial; }
 
-#uc-des {
+#uc-des, #eds-des {
   float: right;
   width: 35%;
   font-family: 'Open Sans', arial;
@@ -233,7 +272,7 @@ h4 {
   margin-bottom: 3em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
-    #uc-des {
+    #uc-des, #eds-des {
       width: 100%;
       margin: 0;
       padding: 1em; } }
@@ -251,5 +290,17 @@ h4 {
       width: 100%;
       margin: 0;
       padding: 1em; } }
+
+.contact-icons {
+  display: flex;
+  justify-content: center; }
+
+.icon-anchor {
+  margin: auto; }
+  .icon-anchor:link, .icon-anchor:visited {
+    color: #505050;
+    text-decoration: none; }
+  .icon-anchor i:hover {
+    color: black; }
 
 /*# sourceMappingURL=main.css.map */
