@@ -13,7 +13,7 @@ $(document).ready(function() {
         }, 1000, function() {
         	$(this).html("Welcome to my portfolio");
             $(this).animate({
-                color: "black"
+                color: "rgba(240, 240, 240, 1)"
             }, 1000);
         });
     });

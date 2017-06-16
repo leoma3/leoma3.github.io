@@ -34,7 +34,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #uc-mockup {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #data-vis {
   background-image: url("../img/data-vis2.jpg");
@@ -47,7 +47,7 @@ h4 {
   background-size: contain; }
   @media screen and (max-width: 768px) {
     #data-vis {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #eds-wiring {
   background-image: url("../img/eds5.jpg");
@@ -60,7 +60,7 @@ h4 {
   background-size: contain; }
   @media screen and (max-width: 768px) {
     #eds-wiring {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #self-hover {
   background-image: url("../img/self-original.jpg");
@@ -72,7 +72,7 @@ h4 {
   background-position: center; }
   @media screen and (max-width: 768px) {
     #self-hover {
-      background-size: 50%; } }
+      background-size: contain; } }
   #self-hover:hover {
     background: white;
     background-position: 2000px 2000px; }
@@ -86,7 +86,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #self-ori {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #self-empty {
   background-image: url("../img/self-empty.jpg");
@@ -97,7 +97,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #self-empty {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #self-inverted {
   background-image: url("../img/self-inverted.jpg");
@@ -108,7 +108,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #self-inverted {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #self-normal {
   background-image: url("../img/self-normal.jpg");
@@ -119,7 +119,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #self-normal {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 #self {
   background-image: url("../img/self.jpg");
@@ -130,7 +130,7 @@ h4 {
   background-color: black; }
   @media screen and (max-width: 768px) {
     #self {
-      background-size: 50%; } }
+      background-size: contain; } }
 
 .fix-header {
   position: fixed;

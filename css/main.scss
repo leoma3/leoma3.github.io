@@ -8,7 +8,7 @@
     background-size: cover;
     background-color: black;
     @media screen and (max-width: 768px) {
-        background-size: 50%;
+        background-size: contain;
     }
 }
 
