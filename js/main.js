@@ -1,4 +1,5 @@
 $(document).on('click', 'a.from-left', function(event) {
+	if (this.getAttribute("href") == "resume.pdf"){return;}
     event.preventDefault();
     event.stopPropagation();
     $('html, body').animate({
@@ -11,7 +12,7 @@ $(document).ready(function() {
         $("#self").css({
             "background-color": "black",
             "min-height": "50vh",
-            "background-position": "0 4.4em",
+            "background-position": "0 15vh",
             "margin-top": "3.2em"
         });
         $("#self-empty").css({
@@ -19,7 +20,7 @@ $(document).ready(function() {
         });
         $("#self-normal").css({
             "min-height": "50vh",
-            "background-position": "0px 92vh"
+            "background-position": "0px 161vh"
         });
 
         $("#uc-mockup").css({
@@ -33,6 +34,11 @@ $(document).ready(function() {
         $("#eds-wiring").css({
             "min-height": "50vh",
             "background-position": "0px 874vh"
+        });
+
+        $("#self-hover").css({
+            "background-image": "none",
+            "background-color": "white"
         });
     } else if (getMobileOperatingSystem()=="Android"){
         $("#self").css({
@@ -58,9 +64,8 @@ $(document).ready(function() {
         $(this).animate({
             width: "100%"
         }, 1000, function() {
-            $(this).html("Welcome to my portfolio");
             $(this).animate({
-                color: "rgba(240, 240, 240, 1)"
+                color: "rgba(255, 255, 255, 1)"
             }, 1000);
         });
     });
