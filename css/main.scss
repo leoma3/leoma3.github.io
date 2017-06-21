@@ -70,10 +70,10 @@ h4 {
 }
 
 #self-hover {
-
     @include parallax-background("../img/self-original.jpg");
 
     background-position: center;
+    background-color: transparent;
 
     &:hover {
         background: rgba(255, 255, 255, 1);
@@ -87,6 +87,7 @@ h4 {
 
 #self-empty {
     @include parallax-background("../img/self-empty.jpg");
+
     padding: 2em;
 }
 
@@ -124,7 +125,6 @@ h4 {
 
             .from-left {
                 color: white;
-
             }
         }
     }
@@ -247,14 +247,14 @@ h4 {
 
 #welcome-ms {
     display: none;
-      padding:1em 0;
-      background: rgba(50, 50, 50, .5);
-      color:transparent;
-      text-align: center;
-      width:0px;
-      height: 1em;
-      font-family: 'Aldrich', sans-serif;
-      font-weight: 100;
+    padding: 1em 0;
+    background: rgba(50, 50, 50, 0.5);
+    color: transparent;
+    text-align: center;
+    width: 0px;
+    height: 1em;
+    font-family: 'Aldrich', sans-serif;
+    font-weight: 100;
 }
 
 .my-gallery {
@@ -279,7 +279,9 @@ h4 {
 
         .highlight {
             color: red;
+
             // font-weight: bold;
+
         }
     }
 }
@@ -293,10 +295,12 @@ h4 {
     font-family: 'Open Sans', arial;
 }
 
-#uc-des, #eds-des {
+#uc-des {
+    margin-right: 4em;
+    width: 35%;
+    margin-top: -13.5em;
     float: right;
     font-family: 'Open Sans', arial;
-
     margin-bottom: 3em;
     box-sizing: border-box;
 
@@ -307,16 +311,20 @@ h4 {
     }
 }
 
-#eds-des{
+#eds-des {
     margin-right: 5em;
     width: 30%;
     margin-top: -12em;
-}
+    float: right;
+    font-family: 'Open Sans', arial;
+    margin-bottom: 3em;
+    box-sizing: border-box;
 
-#uc-des {
-    margin-right: 4em;
-    width: 35%;
-    margin-top: -13.5em;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
 }
 
 #data-des {
@@ -370,10 +378,10 @@ figure.image_cover {
             display: block;
             cursor: pointer;
             -webkit-transition: all .5s ease;
-               -moz-transition: all .5s ease;
-                -ms-transition: all .5s ease;
-                 -o-transition: all .5s ease;
-                    transition: all .5s ease;
+            -moz-transition: all .5s ease;
+            -ms-transition: all .5s ease;
+            -o-transition: all .5s ease;
+            transition: all .5s ease;
         }
 
         &:hover::before {
@@ -385,4 +393,19 @@ figure.image_cover {
 
 .images {
     margin-top: 1em;
+}
+
+#contact_ms {
+    float: left;
+    clear: left;
+    font-family: 'Open Sans', arial;
+    margin: 1em 0 1em 2em;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+        padding: 1em;
+    }
 }

@@ -9,6 +9,7 @@ $(document).on('click', 'a.from-left', function(event) {
 
 $(document).ready(function() {
     if (getMobileOperatingSystem()=="iOS") {
+    	alert("Hey you are using " + getMobileOperatingSystem() + "and the experience is much better on a desktop. Just saying.");
         $("#self").css({
             "background-color": "black",
             "min-height": "50vh",
@@ -41,6 +42,7 @@ $(document).ready(function() {
             "background-color": "white"
         });
     } else if (getMobileOperatingSystem()=="Android"){
+    	alert("Hey you are using " + getMobileOperatingSystem() + "and the experience is much better on a desktop. Just saying.");
         $("#self").css({
             "background-color": "black",
             "min-height": "100vw",

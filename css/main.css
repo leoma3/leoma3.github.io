@@ -71,7 +71,8 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
-  background-position: center; }
+  background-position: center;
+  background-color: transparent; }
   @media screen and (max-width: 768px) {
     #self-hover {
       background-size: contain; } }
@@ -269,13 +270,16 @@ h4 {
 .pswp__caption__center {
   font-family: 'Open Sans', arial; }
 
-#uc-des, #eds-des {
+#uc-des {
+  margin-right: 4em;
+  width: 35%;
+  margin-top: -13.5em;
   float: right;
   font-family: 'Open Sans', arial;
   margin-bottom: 3em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
-    #uc-des, #eds-des {
+    #uc-des {
       width: 100%;
       margin: 0;
       padding: 1em; } }
@@ -283,12 +287,16 @@ h4 {
 #eds-des {
   margin-right: 5em;
   width: 30%;
-  margin-top: -12em; }
-
-#uc-des {
-  margin-right: 4em;
-  width: 35%;
-  margin-top: -13.5em; }
+  margin-top: -12em;
+  float: right;
+  font-family: 'Open Sans', arial;
+  margin-bottom: 3em;
+  box-sizing: border-box; }
+  @media screen and (max-width: 768px) {
+    #eds-des {
+      width: 100%;
+      margin: 0;
+      padding: 1em; } }
 
 #data-des {
   float: right;
@@ -340,5 +348,19 @@ h4 {
 
 .images {
   margin-top: 1em; }
+
+#contact_ms {
+  float: left;
+  clear: left;
+  font-family: 'Open Sans', arial;
+  margin: 1em 0 1em 2em;
+  padding: 1em;
+  background: rgba(255, 255, 255, 0.6);
+  box-sizing: border-box; }
+  @media screen and (max-width: 768px) {
+    #contact_ms {
+      width: 100%;
+      margin: 0;
+      padding: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
