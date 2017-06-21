@@ -260,8 +260,7 @@ h4 {
     .my-gallery:hover h3, .my-gallery:hover p {
       color: white; }
     .my-gallery:hover .highlight {
-      color: red;
-      font-weight: bold; }
+      color: red; }
 
 .pswp_bg {
   opacity: 0.6;
@@ -272,10 +271,8 @@ h4 {
 
 #uc-des, #eds-des {
   float: right;
-  width: 35%;
   font-family: 'Open Sans', arial;
-  margin-right: 2em;
-  margin-top: -6em;
+  margin-top: -12em;
   margin-bottom: 3em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
@@ -284,12 +281,20 @@ h4 {
       margin: 0;
       padding: 1em; } }
 
+#eds-des {
+  margin-right: 5em;
+  width: 30%; }
+
+#uc-des {
+  margin-right: 4em;
+  width: 35%; }
+
 #data-des {
   float: right;
   width: 35%;
   font-family: 'Open Sans', arial;
-  margin-right: 3em;
-  margin-top: 5%;
+  margin-right: 3.5em;
+  margin-top: -3.5em;
   margin-bottom: 3em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
