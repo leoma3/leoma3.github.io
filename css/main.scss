@@ -296,7 +296,7 @@ h4 {
 #uc-des, #eds-des {
     float: right;
     font-family: 'Open Sans', arial;
-    margin-top: -12em;
+
     margin-bottom: 3em;
     box-sizing: border-box;
 
@@ -310,11 +310,13 @@ h4 {
 #eds-des{
     margin-right: 5em;
     width: 30%;
+    margin-top: -12em;
 }
 
 #uc-des {
     margin-right: 4em;
     width: 35%;
+    margin-top: -13.5em;
 }
 
 #data-des {
