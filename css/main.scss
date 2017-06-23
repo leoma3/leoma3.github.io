@@ -87,8 +87,16 @@ h4 {
 
 #self-empty {
     @include parallax-background("../img/self-empty.jpg");
-
     padding: 2em;
+
+    @media screen and (max-width: 768px) {
+        padding: 0;
+
+        .group {
+            padding: 1em;
+        }
+    }
+
 }
 
 #self-inverted {
@@ -116,6 +124,8 @@ h4 {
     div {
         position: absolute;
         bottom: 0;
+        left:0;
+        right:0;
         color: white;
         background-color: black;
     }
@@ -153,11 +163,17 @@ h4 {
     }
 
     .navi {
+        padding: 0.5em 0;
+        margin: 0.3em 0;
+        width:25%;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', arial;
         @media screen and (max-width: 768px) {
             padding: 0;
 
             &.span_3_of_12 {
-                width: 43.6%;
+                width: 50%;
                 margin: 0.3em 0;
             }
 
@@ -166,15 +182,6 @@ h4 {
             }
         }
 
-        padding: 0.5em 0;
-        margin: 0.3em 0;
-        box-sizing: border-box;
-        text-align: center;
-        font-family: 'Montserrat Subrayada', arial;
-
-        // font-family: 'Montserrat', arial;
-        // font-family: 'Ubuntu Condensed', arial;
-        // font-family: 'Varela Round', arial;
 
         a {
             background: none;
@@ -265,12 +272,14 @@ h4 {
 
 #welcome-ms {
     display: none;
+    align-items: center;
+    justify-content: center;
     padding: 1em 0;
     background: rgba(50, 50, 50, 0.5);
     color: transparent;
     text-align: center;
     width: 0px;
-    height: 1em;
+    height: 1.5em;
     font-family: 'Aldrich', sans-serif;
     font-weight: 100;
 }
@@ -328,7 +337,7 @@ h4 {
 #uc-des {
     margin-right: 4em;
     width: 35%;
-    margin-top: -16.5em;
+    margin-top: -14.5em;
     float: right;
     font-family: 'Open Sans', arial;
     font-size: 0.88em;
@@ -346,7 +355,7 @@ h4 {
     float: right;
     width: 35%;
     font-family: 'Open Sans', arial;
-    margin-right: 3.5em;
+    margin-right: 5%;
     margin-top: -2em;
     line-height: 1.1em;
     font-size: 0.88em;
@@ -360,7 +369,7 @@ h4 {
 }
 
 #eds-des {
-    margin-right: 5em;
+    margin-right: 5%;
     width: 35%;
     margin-top: -12em;
     float: right;

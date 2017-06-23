@@ -102,6 +102,11 @@ h4 {
   @media screen and (max-width: 768px) {
     #self-empty {
       background-size: contain; } }
+  @media screen and (max-width: 768px) {
+    #self-empty {
+      padding: 0; }
+      #self-empty .group {
+        padding: 1em; } }
 
 #self-inverted {
   background-image: url("../img/self-inverted.jpg");
@@ -147,6 +152,8 @@ h4 {
   #second-self div {
     position: absolute;
     bottom: 0;
+    left: 0;
+    right: 0;
     color: white;
     background-color: black; }
 
@@ -173,6 +180,7 @@ h4 {
   .fix-header .navi {
     padding: 0.5em 0;
     margin: 0.3em 0;
+    width: 25%;
     box-sizing: border-box;
     text-align: center;
     font-family: 'Montserrat Subrayada', arial; }
@@ -180,7 +188,7 @@ h4 {
       .fix-header .navi {
         padding: 0; }
         .fix-header .navi.span_3_of_12 {
-          width: 43.6%;
+          width: 50%;
           margin: 0.3em 0; }
         .fix-header .navi.span_3_of_12:nth-child(2n+1) {
           clear: both; } }
@@ -251,12 +259,14 @@ h4 {
     display: none; } }
 #welcome-ms {
   display: none;
+  align-items: center;
+  justify-content: center;
   padding: 1em 0;
   background: rgba(50, 50, 50, 0.5);
   color: transparent;
   text-align: center;
   width: 0px;
-  height: 1em;
+  height: 1.5em;
   font-family: 'Aldrich', sans-serif;
   font-weight: 100; }
 
@@ -298,7 +308,7 @@ h4 {
 #uc-des {
   margin-right: 4em;
   width: 35%;
-  margin-top: -16.5em;
+  margin-top: -14.5em;
   float: right;
   font-family: 'Open Sans', arial;
   font-size: 0.88em;
@@ -314,7 +324,7 @@ h4 {
   float: right;
   width: 35%;
   font-family: 'Open Sans', arial;
-  margin-right: 3.5em;
+  margin-right: 5%;
   margin-top: -2em;
   line-height: 1.1em;
   font-size: 0.88em;
@@ -326,7 +336,7 @@ h4 {
       padding: 1em; } }
 
 #eds-des {
-  margin-right: 5em;
+  margin-right: 5%;
   width: 35%;
   margin-top: -12em;
   float: right;

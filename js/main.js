@@ -8,46 +8,55 @@ $(document).on('click', 'a.from-left', function(event) {
 });
 
 $(document).ready(function() {
+	// background image does not work so well on mobiles even for responsive website
+	// using js to handle iOS and andriod respectively
     if (getMobileOperatingSystem()=="iOS") {
     	alert("Hey you are using " + getMobileOperatingSystem() + " and the experience is much better on a desktop. Just saying.");
-        $("#self").css({
-            "background-color": "black",
-            "min-height": "50vh",
+        $("#first-self").css({
+
+            "min-height": "80vh",
             "background-position": "0 15vh",
-            "margin-top": "3.2em"
+            "background-size": "contain"
+            // "margin-top": "3.2em"
+            // "height": "10px",
+            // "display": "none"
         });
         $("#self-empty").css({
         	"background-color": "white"
         });
+
         $("#self-normal").css({
-            "min-height": "50vh",
-            "background-position": "0px 161vh"
+            "min-height": "10vh"
         });
 
         $("#uc-mockup").css({
-            "min-height": "50vh",
-            "background-position": "0px 357vh"
+            "min-height": "10vh"
+            // "background-position": "0px 357vh"
         });
         $("#data-vis").css({
-            "min-height": "50vh",
+            "min-height": "10vh",
             "background-position": "0px 500vh"
         });
         $("#eds-wiring").css({
-            "min-height": "50vh",
+            "min-height": "10vh",
             "background-position": "0px 874vh"
         });
 
-        $("#self-hover").css({
-            "background-image": "none",
-            "background-color": "white"
+        $("#second-self").css({
+        	"min-height": "10vh"
         });
+
+        // $("#self-hover").css({
+        //     "background-image": "none",
+        //     "background-color": "white"
+        // });
     } else if (getMobileOperatingSystem()=="Android"){
     	alert("Hey you are using " + getMobileOperatingSystem() + " and the experience is much better on a desktop. Just saying.");
         $("#self").css({
             "background-color": "black",
             "min-height": "100vw",
             "margin-top": "3.2em",
-            "background-size": "contain"
+            "background-size": "cover"
         });
     	$("#self-empty").css({
         	"background-color": "white"
@@ -63,8 +72,11 @@ $(document).ready(function() {
 
 
     $("#welcome-ms").fadeIn(1000, function() {
+    	$(this).css({
+    		display: "flex"
+    	});
         $(this).animate({
-            width: "100%"
+            width: "100%",
         }, 1000, function() {
             $(this).animate({
                 color: "rgba(255, 255, 255, 1)"
