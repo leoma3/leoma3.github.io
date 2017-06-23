@@ -12,13 +12,9 @@
     <link rel="stylesheet" type="text/css" href="css/photoswipe-style.css">
     <link rel='stylesheet prefetch' href='bower_components/photoswipe/dist/default-skin/default-skin.css'>
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <!--     <link href="https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Subrayada:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
-    <!--     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css'> -->
     <title>LEOnardo Ma</title>
   </head>
   <body>
@@ -38,11 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax" id="self" style="
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      ">
+    <div class="parallax self" id="first-self">
       <h3 id="welcome-ms">Meticulousness. Omnipresence. Sustainability.
       </h3>
     </div>
@@ -52,10 +44,10 @@
     <div id="self-empty">
       <h1>Intro</h1>
       <div class="section group">
-        <div class="col span_4_of_12" style="font-family: 'Open Sans', arial; line-height:1.2em;">
+        <div class="col span_4_of_12 intro_ms">
           I am Ma. Leonardo Ma. Who am I? I am a designer and programmer. I am Hong Kong-born &amp; Vancouver-raised. As a designer, my direction is influenced by the harmonious structure of Chinese characters, considering every detail of my design and how they can successfully fit together. As a programmer, I am constantly hungry for knowledge. I love getting my hands dirty when tackling challenges.
         </div>
-        <div class="col span_3_of_12" style="font-family: 'Open Sans', arial; line-height:1.2em;">
+        <div class="col span_4_of_12 intro_ms">
           When I'm in the zone, my approach embodies three qualities of design and coding:
           meticulousness, omnipresence, and sustainability. By combining
           the meticulousness in problem solving and making conscious
@@ -77,7 +69,7 @@
             <a href="img/mockup1.jpg" data-size="4000x2250">
               <img src="img/mockup1.jpg" itemprop="thumbnail" alt="Image description" class="width-100"/>
             </a>
-            <figcaption>Initial order management</figcaption>
+            <figcaption>Very first Order Management System portal</figcaption>
           </figure>
           <figure class="col span_3_of_12 image_cover" itemscope itemtype="http://schema.org/ImageObject">
             <a href="img/mockup2.jpg" data-size="4000x2250">
@@ -89,13 +81,13 @@
             <a href="img/mockup3.jpg" data-size="4000x2250">
               <img src="img/mockup3.jpg" itemprop="thumbnail" alt="Image description" class="width-100"/>
             </a>
-            <figcaption>Each item has an Area Of Interest and parameters</figcaption>
+            <figcaption>Each order items has an Area Of Interest and parameters</figcaption>
           </figure>
           <figure class="col span_3_of_12 image_cover" itemscope itemtype="http://schema.org/ImageObject">
             <a href="img/mockup4.jpg" data-size="4000x2250">
               <img src="img/mockup4.jpg" itemprop="thumbnail" alt="Image description" class="width-100"/>
             </a>
-            <figcaption>User is able to add a new item to a pending request</figcaption>
+            <figcaption>User is able to add a new order item to a pending request</figcaption>
           </figure>
         </div>
         <p id='uc-des'>
@@ -117,12 +109,12 @@
               <a href="img/data-vis.png" data-size="1368x792">
                 <img src="img/data-vis.png" itemprop="thumbnail" alt="Image description" class="width-100"/>
               </a>
-              <figcaption>An application helps you choose cereal based on the user's need</figcaption>
+              <figcaption>This application helps users choose cereals based on their needs</figcaption>
             </figure>
           </div>
-          <p id='data-des'>For a data visualization course at SFU, I decided to design and build an interactive interface to help users choose their preferred cereal based on price, nutrition, and performance. My teammate and I conducted group interviews to gather user requirements. There were many nutrition and lifestyle factors involved with choosing a cereal. A challenge was to simplify interactions, while showing large amounts of meaningful data. In order to offer sorting based on nutrition, our initial idea was to generate multiple graphs for each nutritional factor. However, the graphs would clutter the view and would be hard for users to focus in on a type of cereal. Instead, I designed a dropdown list of nutrition elements to sort the results on a histogram.
-            <br><br>
-          Another important decision made was to Implement a parallel coordinate graph. This was done to maximize the visibility of the data and improve filtering of data based on nutrition values. Also, interaction in one graph would also induce changes in the other two graphs too. For example, selecting a bar in the histogram would highlight a point at the scatterplot and a line in the parallel coordinates respectively and vice versa. The remaining results on the scatterplot and histogram would also be trimmed down based on the range in the parallel coordinate. This project was successful and is still used as an example for the course.</p>
+          <p id='data-des'>For a data visualization course at SFU, I decided to <span class="highlight">design and build</span> an interactive interface to help users choose their preferred cereal based on price, nutrition, and performance. My teammate and I conducted <span class="highlight">group interviews</span> to gather user requirements. There were many nutrition and lifestyle factors involved with choosing a cereal. A challenge was to simplify <span class="highlight">interactions</span>, while showing large amounts of meaningful data. In order to offer sorting based on nutrition, our initial idea was to generate multiple graphs for each nutritional factor. However, the graphs would clutter the view and would be hard for users to focus in on a type of cereal. Instead, I designed a dropdown list of nutrition elements to sort the results on a histogram.
+          <br><br>
+          Another important decision made was to Implement a parallel coordinate graph. This was done to <span class="highlight">maximize the visibility</span> of the data and improve filtering of data based on nutrition values. Also, interaction in one graph would also induce changes in the other two graphs too. For example, selecting a bar in the histogram would highlight a point at the scatterplot and a line in the parallel coordinates respectively and vice versa. The remaining results on the scatterplot and histogram would also be trimmed down based on the range in the parallel coordinate. This project was successful and is still used as an example for the course.</p>
         </div>
       </div>
       <div class="parallax" id="data-vis"></div>
@@ -154,7 +146,7 @@
               <a href="img/eds4.jpg" data-size="750x1000">
                 <img src="img/eds4.jpg" itemprop="thumbnail" alt="Image description" class="width-100"/>
               </a>
-              <figcaption>Morse Things Twitter</figcaption>
+              <figcaption>Morse Things Responses on Twitter</figcaption>
             </figure>
           </div>
           <p id='eds-des'>
@@ -178,17 +170,13 @@
               <a href="https://github.com/leoma3" class="icon-anchor" target="_blank"><i class="fa fa-github fa-3x"></i></a>
               <a href="https://bitbucket.org/leonardoma/" class="icon-anchor" target="_blank"><i class="fa fa-bitbucket fa-3x"></i></a>
               <a href="https://www.linkedin.com/in/leonardo-ma-06474291/" target="_blank" class="icon-anchor"><i class="fa fa-linkedin-square fa-3x"></i></a>
-              <a href="mailto:leo_ma@alumni.sfu.ca" class="icon-anchor"><i class="fa fa-envelope fa-3x"></i></a>
+              <a href="mailto:leonardo.ma777@gmail.com" class="icon-anchor"><i class="fa fa-envelope fa-3x"></i></a>
             </div>
-            <div id='contact_ms'>Let’s sit down for a coffee and chat about my projects!</div>
+            <!-- <div id='contact_ms'>Let’s sit down for a coffee and chat about my projects!</div> -->
           </div>
         </div>
-        <div class="parallax" id="self" style="position:relative;">
-          <div class="section group" style="
-            position:absolute;
-            bottom:0;
-            color:white;
-            ">
+        <div class="parallax self" id="second-self">
+          <div class="section group">
             <h4>COPYRIGHT © LEONARDO MA, 2017</h4>
           </div>
         </div>
@@ -241,8 +229,6 @@
             </div>
           </div>
         </div>
-        <!--     <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script> -->
         <script src="bower_components/photoswipe/dist/photoswipe-ui-default.min.js" type="text/javascript"></script>
         <script src="bower_components/photoswipe/dist/photoswipe.min.js" type="text/javascript"></script>
         <script src='js/photoswipe.js'></script>

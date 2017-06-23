@@ -125,7 +125,7 @@ h4 {
     #self-normal {
       background-size: contain; } }
 
-#self {
+.self {
   background-image: url("../img/self.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -133,8 +133,22 @@ h4 {
   background-size: cover;
   background-color: black; }
   @media screen and (max-width: 768px) {
-    #self {
+    .self {
       background-size: contain; } }
+
+#first-self {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+#second-self {
+  position: relative;
+  background-color: white; }
+  #second-self div {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: black; }
 
 .fix-header {
   position: fixed;
@@ -256,12 +270,23 @@ h4 {
   @media only screen and (min-width: 768px) {
     .my-gallery {
       padding: 2em; } }
+  .my-gallery .external-link {
+    background: black;
+    color: white;
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1.5em;
+    text-decoration: none;
+    font-family: 'aldrich'; }
   .my-gallery:hover {
     background-color: #141414; }
     .my-gallery:hover h3, .my-gallery:hover p {
       color: white; }
     .my-gallery:hover .highlight {
       color: red; }
+    .my-gallery:hover .external-link {
+      background: white;
+      color: black; }
 
 .pswp_bg {
   opacity: 0.6;
@@ -273,27 +298,14 @@ h4 {
 #uc-des {
   margin-right: 4em;
   width: 35%;
-  margin-top: -13.5em;
+  margin-top: -16.5em;
   float: right;
   font-family: 'Open Sans', arial;
-  margin-bottom: 3em;
+  font-size: 0.88em;
+  line-height: 1.1em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     #uc-des {
-      width: 100%;
-      margin: 0;
-      padding: 1em; } }
-
-#eds-des {
-  margin-right: 5em;
-  width: 30%;
-  margin-top: -12em;
-  float: right;
-  font-family: 'Open Sans', arial;
-  margin-bottom: 3em;
-  box-sizing: border-box; }
-  @media screen and (max-width: 768px) {
-    #eds-des {
       width: 100%;
       margin: 0;
       padding: 1em; } }
@@ -303,11 +315,27 @@ h4 {
   width: 35%;
   font-family: 'Open Sans', arial;
   margin-right: 3.5em;
-  margin-top: -3.5em;
-  margin-bottom: 3em;
+  margin-top: -2em;
+  line-height: 1.1em;
+  font-size: 0.88em;
   box-sizing: border-box; }
   @media screen and (max-width: 768px) {
     #data-des {
+      width: 100%;
+      margin: 0;
+      padding: 1em; } }
+
+#eds-des {
+  margin-right: 5em;
+  width: 35%;
+  margin-top: -12em;
+  float: right;
+  font-family: 'Open Sans', arial;
+  font-size: 0.88em;
+  box-sizing: border-box;
+  line-height: 1.1em; }
+  @media screen and (max-width: 768px) {
+    #eds-des {
       width: 100%;
       margin: 0;
       padding: 1em; } }
@@ -362,5 +390,10 @@ h4 {
       width: 100%;
       margin: 0;
       padding: 1em; } }
+
+.intro_ms {
+  font-family: 'Open Sans', arial;
+  line-height: 1.1em;
+  font-size: 0.88em; }
 
 /*# sourceMappingURL=main.css.map */
