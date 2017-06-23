@@ -86,7 +86,7 @@ h4 {
 }
 
 #self-empty {
-    @include parallax-background("../img/self-empty.jpg");
+    // @include parallax-background("../img/self-empty.jpg");
     padding: 2em;
 
     @media screen and (max-width: 768px) {

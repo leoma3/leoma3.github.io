@@ -59,7 +59,7 @@ $(document).ready(function() {
             "background-size": "cover"
         });
     	$("#self-empty").css({
-        	"background-color": "white"
+        	"background-image": "none"
         });
         $("#self-normal, #uc-mockup").css({
             "min-height": "100vw",
@@ -67,6 +67,9 @@ $(document).ready(function() {
         });
         $(".content-offset span").css({
         	"top": "-4.5em"
+        });
+        $("#self-hover").css({
+        	"background-image":"none"
         });
     }
 
