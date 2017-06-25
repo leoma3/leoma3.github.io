@@ -22,34 +22,44 @@ $(document).ready(function() {
             // "display": "none"
         });
         $("#self-empty").css({
-        	"background-color": "white"
+            // "background-image": "none",
+        	// "background-color": "black",
+            // "min-height": "10vh"
         });
 
-        $("#self-normal").css({
-            "min-height": "10vh"
+        $("#self-normal, #uc-mockup, #data-vis, #eds-wiring, #second-self").css({
+            "min-height": "7vh",
+            "background-image": "none",
+            "background-color": "black"
         });
 
-        $("#uc-mockup").css({
-            "min-height": "10vh"
-            // "background-position": "0px 357vh"
-        });
-        $("#data-vis").css({
-            "min-height": "10vh",
-            "background-position": "0px 500vh"
-        });
-        $("#eds-wiring").css({
-            "min-height": "10vh",
-            "background-position": "0px 874vh"
-        });
-
-        $("#second-self").css({
-        	"min-height": "10vh"
-        });
-
-        // $("#self-hover").css({
+        // $("#uc-mockup").css({
+        //     "min-height": "7vh",
         //     "background-image": "none",
         //     "background-color": "white"
         // });
+        // $("#data-vis").css({
+        //     "min-height": "7vh",
+        //     "background-image": "none",
+        //     "background-color": "white"
+
+        // });
+        // $("#eds-wiring").css({
+        //     "min-height": "7vh",
+        //     "background-image": "none",
+        //     "background-color": "white"
+        // });
+
+        // $("#second-self").css({
+        // 	"min-height": "7vh",
+        //     "background-image": "none",
+        //     "background-color": "white"
+        // });
+
+        $("#self-hover").css({
+            "background-image": "none",
+            "background-color": "white"
+        });
     } else if (getMobileOperatingSystem()=="Android"){
     	alert("Hey you are using " + getMobileOperatingSystem() + " and the experience is much better on a desktop. Just saying.");
         $("#self").css({
@@ -59,7 +69,8 @@ $(document).ready(function() {
             "background-size": "cover"
         });
     	$("#self-empty").css({
-        	"background-image": "none"
+        	"background-image": "none",
+            "background-color": "white"
         });
         $("#self-normal, #uc-mockup").css({
             "min-height": "100vw",

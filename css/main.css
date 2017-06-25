@@ -98,13 +98,15 @@ h4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
-  padding: 2em; }
+  padding: 2em;
+  background-color: white; }
   @media screen and (max-width: 768px) {
     #self-empty {
       background-size: contain; } }
   @media screen and (max-width: 768px) {
     #self-empty {
-      padding: 0; }
+      padding: 0;
+      background-image: none; }
       #self-empty .group {
         padding: 1em; } }
 

@@ -89,8 +89,11 @@ h4 {
     @include parallax-background("../img/self-empty.jpg");
     padding: 2em;
 
+    background-color: white;
+
     @media screen and (max-width: 768px) {
         padding: 0;
+        background-image: none;
 
         .group {
             padding: 1em;
